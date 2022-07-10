@@ -30,16 +30,15 @@ spring:
       hibernate:
         format_sql: true
         default_batch_fetch_size: 100
+  data.rest:
+    base-path: /api
+    detection-strategy: annotated
   h2:
     console:
       enabled: false
   sql:
     init:
       mode: always
-  data:
-    rest:
-      base-path: /api
-      detection-strategy: annotation
 
 ---
 
